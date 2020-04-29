@@ -3,7 +3,6 @@ const socketio = require('socket.io');
 const Filter = require('bad-words');
 const http = require('http');
 const path = require('path');
-
 const {generateMessage, generateLocationMessage} = require('./utils/messages');
 const {addUser, getUsersInRoom, getUser, removeUser} = require('./utils/users');
 
