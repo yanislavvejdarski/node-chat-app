@@ -9,7 +9,7 @@ const {addUser, getUsersInRoom, getUser, removeUser} = require('./utils/users');
 
 const app = express();
 const server = http.createServer(app);
-const port = process.env.PORT | 3000;
+const port = process.env.PORT || 3000;
 const io = socketio(server);
 
 const publicDirectoryPath = path.join(__dirname, '../public');
